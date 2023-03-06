@@ -1,0 +1,128 @@
+/* global */
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  @font-face {
+    font-family: "Open-sans";
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+      url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Open-sans";
+    src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+      url('../fonts/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Open-sans";
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+      url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
+  body {
+    min-width: 320px;
+    font-family: 'Open-sans', 'sans-serif';
+    font-weight: 400;
+    background-color: #f5f5f5;
+    z-index: 10;
+
+  }
+  
+  
+  table, th, td {
+    border-left: none;
+    border-right: none;
+    border-collapse: collapse;
+    color: #333333;
+  }
+  
+  td {
+    padding: 2px;
+    padding-left: 10px;
+  }
+
+  td:first-child {
+    padding-left: 15px;
+  }
+
+  
+  .list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .container {
+    margin: 0 auto;
+    /* padding: 0 20px; */
+    max-width: 1064px;
+  }
+
+
+  /* preloader */
+  
+.loader {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  width: 100%;
+  height: 300px;
+}
+
+.loader span {
+  position: absolute;
+  left: 430px;
+  top: 30%;
+  display: inline-block;
+  animation: spiner 0.5s  ease-in-out infinite;
+}
+
+@keyframes spiner {
+  0%{
+    transform: rotate(0deg);
+  }  
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
